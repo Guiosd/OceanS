@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+
+<level
+  name="level1"
+  type="Level"
+  scene="nothing"
+  title="Welcome"
+  number="0"
+  demo="False"
+  title_hint=""
+  default_played="False"
+  placeholders="x3dshape"
+  loading_image=""
+  loading_bar_y_position="0.5"
+  placeholder_reference_direction="1 0 0"
+  music_sound="Well.mp3">
+
+  <!--
+    prepare_resources is an optional element.
+    It should contain a list of resources (creatures;
+    no need to list items, as they are always prepared (by default),
+    see T3DResource.AlwaysPrepare) used by the level.
+    Every <resource> element should refer to the resource name,
+    that is you should have resource.xml file with name="TestCreature"
+    in your data.
+  -->
+
+  <prepare_resources>
+    <resource name="TestCreature" />
+    <!-- And more <resource> elements... -->
+  </prepare_resources>
+</level>
