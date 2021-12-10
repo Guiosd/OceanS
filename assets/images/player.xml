@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+
+<player
+  knockback_speed="20.0"
+  head_bobbing_time="0.5"
+  head_bobbing="0.02"
+  sick_projection_speed="2.0">
+
+  <jump
+    max_height="1.0"
+    horizontal_speed_multiply="2.0"
+    time="0.125" />
+
+  <fall>
+    <sound
+      min_height="4.0"
+      name="player_fall" />
+
+    <damage
+      min_height="5.0"
+      scale_min="0.8"
+      scale_max="1.2" />
+  </fall>
+
+  <swim
+    breath="30.0"
+    sound_pause="5.0" />
+
+  <drown
+    pause="5.0">
+    <damage
+      const="5.0"
+      random="10.0" />
+  </drown>
+</player>
